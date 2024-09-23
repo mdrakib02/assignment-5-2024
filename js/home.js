@@ -54,7 +54,7 @@ document.getElementById("donate-button-two").addEventListener("click", function 
        return
    }
    else{
-        document.getElementById("input-one").value = "";
+        document.getElementById("input-two").value = "";
     }
 
     const totalBalanceOne = fieldValueById("total-balance");
@@ -99,7 +99,7 @@ document.getElementById("donate-button-three").addEventListener("click", functio
        document.getElementById("input-three").value = "";
        return
    }else{
-        document.getElementById("input-one").value = "";
+        document.getElementById("input-three").value = "";
     }
 
     const totalBalanceOne = fieldValueById("total-balance");
@@ -146,6 +146,9 @@ document.getElementById("blog-button").addEventListener("click", function() {
     window.location.href = "faq-section.html"
 });
 
+document.getElementById("donate-bd").addEventListener("click", function() {
+    window.location.href = "index.html";
+})
 
 
 
