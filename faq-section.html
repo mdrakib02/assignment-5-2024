@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisy link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .legend-font-family {
+        font-family: sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        }
+    </style>
+</head>
+<body class="">
+    <header class="sticky top-0 z-10 backdrop-blur-3xl transition-all duration-1000">
+        <section class="py-4 md:py-6 bg-amber-50">
+            <nav class="container w-10/12 mx-auto flex justify-between items-center">
+                <div class="">
+                    <button id="home-btn" class="text-xs md:text-2xl font-bold bg-lime-300 py-2 px-4 rounded-md">Home</button>
+                </div>
+                <div class="text-xs md:text-2xl font-bold flex items-center  ">
+                    <img class="w-5 md:w-auto" src="./assets/logo.png" alt="">
+                    <p class="ml-2 md:ml-4">Donate Bangladesh</p>
+                </div>
+                <div class="text-xs  md:text-2xl font-bold flex items-center">
+                    <img class="w-5 md:w-auto" src="./assets/coin.png" alt="">
+                    <p class="ml-2"><span id="">500</span>BDT</p>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container w-10/12 mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Important FAQ</h2>
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-bold">What is the Document Object Model (DOM)?</div>
+                  <div class="collapse-content">
+                    <p class="text-xs md:text-xl">Dom is like a map/ structure of everything on a webpage (like text, images, buttons, etc)</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-bold">How do you select on element from the DOM?</div>
+                  <div class="collapse-content">
+                    <p class="text-xs md:text-xl">There are some methods to select element. as like 1. getElementById() 2.getElementsByClassName() 3.GetElementsByTagNAme() 4.querySelector() 5.querySelectorAll()</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-bold">What is event delegation in the context of the dom, and why is it use ful? </div>
+                  <div class="collapse-content">
+                    <p class="text-xs md:text-xl">Event delegation is a technique in JAVA Script that allows you to handle events ata parent level instead of attaching event listeners to individual child elements. It is use full because , if you have hundreds of item or elements, using event delegation reduce the number of event listeners improving performance.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-bold">How do you manipulate and elements attribute and styles using the dom?</div>
+                  <div class="collapse-content">
+                    <p class="text-xs md:text-xl">We can use various methods. .setAttribute (set an new value for an attribute), .getAttribute (gets the current value of an attribute), .removeAttribute(Removes an attribute from an elements)</p>
+                  </div>
+              </div>
+        </section>
+    </main>
+</body>
+<script src="./js/home.js"></script>
+<script src="./js/utility.js"></script>
+</html>
