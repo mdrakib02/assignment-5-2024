@@ -8,6 +8,9 @@ document.getElementById("donate-button-one").addEventListener("click", function 
         document.getElementById("input-one").value = "";
         return
     }
+    else{
+        document.getElementById("input-one").value = "";
+    }
  
 
     const totalBalanceOne = fieldValueById("total-balance");
